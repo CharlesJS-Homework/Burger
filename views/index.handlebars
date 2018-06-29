@@ -1,0 +1,16 @@
+<div id="lists">
+  <ol id="uneaten">
+    {{#each burgers}}
+      {{#unless devoured}}
+        <li><div>{{burger_name}}</div><div><button class="devour" burger_id="{{id}}">Devour it!</button></div></li>
+      {{/unless}}
+    {{/each}}
+  </ol>
+  <ul id="eaten">
+    {{#each burgers}}
+      {{#if devoured}}
+        <li>{{burger_name}}</li>
+      {{/if}}
+    {{/each}}
+  </ul>
+</div>

@@ -1,0 +1,37 @@
+body {
+  background-color: #f7d273;
+  text-align: center;
+}
+
+form {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form > label, form > input[type=text] {
+  width: 100%;
+}
+
+form > input[type=submit] {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#lists {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+}
+
+ol > li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
